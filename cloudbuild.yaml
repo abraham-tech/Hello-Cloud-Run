@@ -13,7 +13,8 @@ steps:
   # Deploy
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['run', 'deploy', 'hello-site',
-          '--image', 'us-central1-docker.pkg.dev/$PROJECT_ID/my-repo/hello:$COMMIT_SHA',
+# '--image', 'us-central1-docker.pkg.dev/$PROJECT_ID/my-repo/hello:$COMMIT_SHA',
+          '--image', 'us-central1-docker.pkg.dev/tenacious-ring-404802/my-repo/hello:b5cd32935a91c3286761449b53dab1a1b1064637',
           '--region', 'us-central1',
           '--platform', 'managed',
           '--no-traffic',
