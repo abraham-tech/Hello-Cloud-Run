@@ -26,3 +26,10 @@ steps:
           '--region', 'us-central1',
           '--to-revisions=LATEST=50']
     id: CANARY
+
+# options 
+options:
+  machineType: N1_HIGHCPU_8
+  build: 
+    service_account: 919897620620-compute@developer.gserviceaccount.com
+    logging: NONE
